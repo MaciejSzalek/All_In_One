@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/download_progress">
+
+    <TextView
+        android:id="@+id/download_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:textSize="20sp"
+        android:text="Pobieram projekt...."/>
+
+    <ProgressBar
+        android:id="@+id/download_progress_bar_widget"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_progress_text"
+        android:layout_margin="8sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"/>
+</RelativeLayout>

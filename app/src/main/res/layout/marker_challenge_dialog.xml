@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pl.proaktyw.proaktyw.ChallengeEditor"
+    android:background="@mipmap/background"
+    android:id="@+id/challenge_info">
+
+    <TextView
+        android:id="@+id/marker_challenge_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color_white"
+        android:text="Challenge Name"/>
+
+    <TextView
+        android:id="@+id/marker_challenge_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/marker_challenge_name"
+        android:textColor="@color/text_color_white"
+        android:text="Password:"/>
+
+    <TextView
+        android:id="@+id/marker_challenge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/marker_challenge_password"
+        android:textColor="@color/text_color_white"
+        android:text="ZADANIE:"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/marker_challenge_title"
+        android:layout_above="@+id/marker_challenge_layout">
+
+        <TextView
+            android:id="@+id/challenge_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:textSize="20sp"
+            android:textColor="@color/text_color_white"
+            android:text="challenge text"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/marker_challenge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/marker_challenge_delete_button"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/trash_bin_ic"/>
+
+        <ImageButton
+            android:id="@+id/marker_challenge_edit_button"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/pencil_ic"/>
+
+        <ImageButton
+            android:id="@+id/marker_challenge_close_button"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/cros_ic_white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

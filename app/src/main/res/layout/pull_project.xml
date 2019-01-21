@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="pl.proaktyw.proaktyw.PullProject"
+    android:id="@+id/pull_project">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pull_project_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:navigationIcon="@drawable/arrow_back">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/pull_project_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/pull_project_list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_project_toolbar"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/pull_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginTop="16sp"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_white"
+            android:hint="nazwa projektu"/>
+
+        <ListView
+            android:id="@+id/pull_project_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pull_project_name"
+            android:layout_marginStart="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/background_second"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

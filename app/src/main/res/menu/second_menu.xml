@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_second">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/new_game_project"
+            android:icon="@drawable/ic_launcher"
+            android:title="NOWY PROJEKT" />
+
+        <item
+            android:id="@+id/save_game_project"
+            android:icon="@drawable/ic_launcher"
+            android:title="ZAPISZ PROJEKT" />
+        <item
+            android:id="@+id/load_game_project"
+            android:icon="@drawable/ic_launcher"
+            android:title="WCZYTAJ PROJEKT" />
+        <item
+            android:id="@+id/manage_game_project"
+            android:icon="@drawable/ic_launcher"
+            android:title="MANAGER" />
+
+    </group>
+</menu>

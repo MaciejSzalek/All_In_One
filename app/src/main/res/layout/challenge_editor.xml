@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="pl.proaktyw.proaktyw.ChallengeEditor"
+    android:id="@+id/challenge_editor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/challenge_editor_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:navigationIcon="@drawable/arrow_back">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/challenge_editor_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/challenge_editor_toolbar"
+        android:layout_above="@+id/challenge_editor_bottom_layout"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/background_second"/>
+
+    <LinearLayout
+        android:id="@+id/challenge_editor_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/challenge_new_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/plus_ic"
+            android:text="New" />
+
+        <ImageButton
+            android:id="@+id/challenge_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/pencil_ic"
+            android:text="Edit" />
+
+        <ImageButton
+            android:id="@+id/challenge_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/info_ic"
+            android:text="info" />
+
+        <ImageButton
+            android:id="@+id/challenge_delete_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@color/background"
+            android:src="@drawable/trash_bin_ic"
+            android:text="X" />
+
+    </LinearLayout>
+
+</RelativeLayout>

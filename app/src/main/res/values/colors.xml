@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#000000</color>
+    <color name="background_second">#b4c9c9c9</color>
+    <color name="background_button_marker_menu">#004c7793</color>
+    <color name="background_alert_builder">#77a8c7</color>
+    <color name="arrow_click">#6da2c4</color>
+    <color name="text_color_white">#000000</color>
+    <color name="text_color_black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="icon_color">#ffffff</color>
+</resources>

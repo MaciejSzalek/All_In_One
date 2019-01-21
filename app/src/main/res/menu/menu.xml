@@ -1,0 +1,79 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/map_type"
+        android:orderInCategory="300"
+        android:icon="@drawable/icon_menu"
+        android:title="Maps">
+        <menu>
+            <item
+                app:showAsAction="never"
+                android:id="@+id/map_type_normal"
+                android:orderInCategory="100"
+                android:title="NORMAL"/>
+
+            <item
+                app:showAsAction="never"
+                android:id="@+id/map_type_satellite"
+                android:orderInCategory="200"
+                android:title="SATELLITE"/>
+
+            <item
+                app:showAsAction="never"
+                android:id="@+id/map_type_hybrid"
+                android:orderInCategory="300"
+                android:title="HYBRID"/>
+
+            <item
+                app:showAsAction="never"
+                android:id="@+id/map_type_terrain"
+                android:orderInCategory="400"
+                android:title="TERRAIN"/>
+
+            <item
+                app:showAsAction="never"
+                android:id="@+id/map_type_none"
+                android:orderInCategory="500"
+                android:title="NONE"/>
+        </menu>
+    </item>
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/second_options"
+        android:orderInCategory="200"
+        android:title="Tools"
+        android:icon="@drawable/icon_tool">
+
+        <menu>
+
+            <item
+                android:showAsAction="ifRoom"
+                android:id="@+id/editor"
+                android:orderInCategory="100"
+                android:title="Challenge edytor"/>
+            <item
+                android:showAsAction="ifRoom"
+                android:id="@+id/simulation"
+                android:orderInCategory="200"
+                android:title="Symulacja GRY"/>
+            <item
+                android:showAsAction="ifRoom"
+                android:id="@+id/line_distance"
+                android:orderInCategory="300"
+                android:title="Wyznacz trasę/dystans"/>
+            <item
+                android:showAsAction="ifRoom"
+                android:id="@+id/delete_line_distance"
+                android:orderInCategory="400"
+                android:title="Usuń trasę/dystans" />
+            <item
+                android:showAsAction="ifRoom"
+                android:id="@+id/delete_all"
+                android:orderInCategory="500"
+                android:title="Usuń markery"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.proaktyw.proaktyw.GAME"
+    android:background="@mipmap/background">
+
+    <TextView
+        android:id="@+id/game_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:text="GAME" />
+
+    <TextView
+        android:id="@+id/game_bearing_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8sp"
+        android:layout_below="@id/game_text_view"
+        android:textSize="24sp"
+        android:textColor="@color/text_color_white"
+        android:background="#83f13232"
+        android:text="bearing" />
+
+    <TextView
+        android:id="@+id/game_marker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_bearing_view"
+        android:layout_marginTop="8sp"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:textColor="@color/text_color_white"
+        android:text="marker" />
+
+    <Switch
+        android:id="@+id/game_gps_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24sp"
+        android:textColor="#000000"
+        android:background="#83f13232"
+        android:text="GPS" />
+
+    <TextView
+        android:id="@+id/azimuth_poi_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/game_gps_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8sp"
+        android:textSize="24sp"
+        android:text="AZIMUTH TO POI" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/meter_test"/>
+
+</RelativeLayout>

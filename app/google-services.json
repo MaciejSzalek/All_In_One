@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "762553140201",
+    "project_id": "firebase-proaktyw"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762553140201:android:29ec1f60863e4e9c",
+        "android_client_info": {
+          "package_name": "pl.proaktyw.proaktyw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762553140201-ef60fvife15198tne6r8k0j4d8lmrbsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_alzi-woGSSocrxwWacE7dELj7WwzOGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

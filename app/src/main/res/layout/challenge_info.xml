@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pl.proaktyw.proaktyw.ChallengeEditor"
+    android:layout_margin="24sp"
+    android:background="@mipmap/background"
+    android:id="@+id/challenge_info">
+
+    <ImageButton
+        android:id="@+id/challenge_info_close_button"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:background="#00ffffff"
+        android:src="@drawable/cros_ic"/>
+
+    <TextView
+        android:id="@+id/challenge_info_project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/text_color_white"
+        android:text="Challenge Name"
+        android:layout_below="@+id/challenge_info_close_button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/challenge_info_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8sp"
+        android:textSize="20sp"
+        android:textColor="@color/text_color_white"
+        android:layout_below="@+id/challenge_info_project_name"
+        android:text="Password:"/>
+
+    <TextView
+        android:id="@+id/challenge_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginStart="8sp"
+        android:textSize="20sp"
+        android:textColor="@color/text_color_white"
+        android:layout_below="@+id/challenge_info_password"
+        android:text="ZADANIE:"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_below="@+id/challenge_info_title">
+
+        <TextView
+            android:id="@+id/challenge_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:textSize="20sp"
+            android:textColor="@color/text_color_white"
+            android:text="challenge text"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>

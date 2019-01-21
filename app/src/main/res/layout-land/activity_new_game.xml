@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="pl.proaktyw.proaktyw.NewGameActivity"
+    android:id="@+id/new_game">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        app:navigationIcon="@drawable/arrow_back"
+        android:id="@+id/new_game_toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/new_game_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_game_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="16sp"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_white"
+        android:hint="nazwa gry"/>
+
+    <ListView
+        android:id="@+id/new_game_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_game_edit_text"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/background_second"/>/>
+
+</RelativeLayout>
